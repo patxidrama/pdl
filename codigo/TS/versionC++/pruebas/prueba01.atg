@@ -1,0 +1,58 @@
+ $CX   /* C++ */
+/* En esta prueba únicamente
+se pretende mostrar un
+ejemplo realmente simple
+de como usar ts2006 con CocoR */
+  COMPILER prueba01
+  #include <stdlib.h>
+  #include <iostream.h>
+  #include "ts2006.h"
+
+  CHARACTERS
+    letra= "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyx_" .
+
+
+  TOKENS
+    palabra = letra { letra } .
+
+  PRODUCTIONS
+    prueba01
+    =    (.   
+char Tipe[100];
+int devuelto;
+ts2006* gestor;
+cout << "--INICIO DE LA COMPILACIÓN--\n"; 
+// creación del gestor
+gestor=new ts2006(); 
+// creación de una tabla
+devuelto=gestor->crear_tabla(); 
+// creación de una entrada
+devuelto=gestor->crear_entrada(1,"eprueba"); 
+// asignar tipo de entrada
+devuelto=gestor->asignar_tipo_entrada(
+1,"eprueba","tprueba");
+devuelto=gestor->crear_atributo_cadena(
+1,"eprueba","contenido","");
+ .)
+{
+
+palabra (. 
+LexString(Tipe, sizeof(Tipe) - 1);
+cout << "Palabra detectada = " << Tipe << " ...\n"; 
+// Anotaremos la última palabra
+// en la tabla 1, 
+// en la entrada eprueba
+// en el atributo contenido
+devuelto=gestor->asignar_valor_atributo_cadena(
+1,"eprueba","contenido",Tipe);
+.)
+} (. 
+cout << "--FIN DE LA COMPILACIÓN--\n"; 
+// escribiremos el contenido de la tabla 1 al final
+// (se verá la última palabra detectada)
+devuelto=gestor->escribir_tabla(1,"prueba01.txt");
+delete gestor; // destruccion del gestor
+
+.)
+. 
+  END  prueba01. 

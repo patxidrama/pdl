@@ -1,0 +1,45 @@
+          TS2006: TAD Tabla de Símbolos
+          =============================
+
+TS2006 dispone de dos versiones. Una de ellas implementada en C y la otra
+implementada en C++.
+
+Se recomienda la lectura detenida del manual de usuario antes de intentar
+utilizar la librería.
+
+Para usarla, simplemente hay que descomprimir en un directorio 
+del disco duro los archivos contenidos en el paquete.
+
+Los ficheros incluidos en el paquete son los siguientes:
+
+-leeme.txt: este fichero
+-historia.txt: un listado de los cambios realizados en las últimas versiones
+-bugs.txt: listado de errores conocidos, indicando si ya están solucionados
+-TS2006 - Manual de Usuario.pdf: documento PDF que incluye la descripción de la
+librería y los servicios ofrecidos por el TAD
+-versionC (directorio con los ficheros de la librería en C):
+	-ts2006.c: código fuente con la implementación de la librería
+	-ts2006.h: declaraciones necesarias para la librería
+	-pruebas: distintas pruebas de ejemplo de la librería
+-versionC++ (directorio con los ficheros de la librería en C++):
+	-ts2006.cpp: código fuente con la implementación de la librería
+	-ts2006*.h: declaraciones necesarias para la librería
+	-pruebas: distintas pruebas de ejemplo de la librería
+
+La versión C ha sido probada inicialmente en los siguientes compiladores:
+- GCC , version DJGPP 2.30
+- Borland C++ 5.5.1 
+- Microsoft Visual C++ , versión 6.0
+La versión C++ ha sido probada inicialmente en los siguientes compiladores:
+- G++  ( GNU C++ compiler for Windows ) , versión 13 de Septiembre de 2005
+- Borland C++ 5.5.1 
+- Microsoft Visual C++ , versión 6.0 
+
+En caso de que se encontrara algún error durante su uso, se agradecerá que
+se envíe un correo electrónico con la descripción precisa del error
+detectado, incluyendo todos los datos posibles y la versión del TAD que
+ha provocado el fallo. También se agradecerá el envío de sugerencias.
+
+La dirección a la que se pueden enviar estos mensajes es
+daniel@blackdtools.com o al Webmaster de la página de Compiladores.
+

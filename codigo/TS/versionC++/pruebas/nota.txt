@@ -1,0 +1,7 @@
+Se ha comprobado que todas las pruebas de la version c obtienen
+los mismos resultados en la version c++ si se hacen las llamadas
+de forma analoga pero a través del objeto gestor ( gestor->... )
+y usando string en lugar de char*
+
+Se incluyen sólo 10 pruebas nuevas específicas,
+donde se puede ver como se usan todas las funciones de la versión c++

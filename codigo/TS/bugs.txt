@@ -1,0 +1,14 @@
+          TS2006: TAD Tabla de Símbolos
+          =============================
+
+-Bugs conocidos:
+26-10-2006: no existen bugs conocidos
+
+11-11-2006: corregido bug en 2 puntos de crear_entrada en la versión C:
+
+ANTES:
+	  strcpy(cadena_tmp,lexema);
+	  nueva_entrada->lexema=lexema;
+DESPUES:
+	  strcpy(cadena_tmp,lexema);
+	  nueva_entrada->lexema=cadena_tmp;

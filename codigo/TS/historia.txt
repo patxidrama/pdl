@@ -1,0 +1,24 @@
+          TS2006: TAD Tabla de Símbolos
+          =============================
+
+-Historia de versiones:
+05.09.2006 [Versión beta 0.2]
+Se pone a disposición la versión 0.2 beta para C y C++.
+27.10.2006 [Versión beta 0.3]
+Se ha eliminado una version de C antigua dejada por error en el la carpeta de pruebas.
+Se ha actualizado el archivo leeme.txt
+11.11.2007 [versión beta 0.4]
+Se ha añadido la función resetear_ultimo_error() , para poder controlar mejor los errores.
+Corregido un bug que podría dar problemas de memoria, en la versión C, en crear_entrada.
+Actualizado el manual de usuario. Se han reescrito algunas partes de forma que quede todo mejor expresado.
+Incluido el archivo PRUEBA01.H que faltaba para la prueba 1.
+30.11.2010 [versión beta 0.5]
+Se han puesto acentos en la descripción de los errores y en la escritura de las tablas.
+Se ha añadido un nuevo parrafo al final del manual de usuario, indicando como ver correctamente los acentos en MS-DOS.
+Ahora se proporcionan 10 pruebas específicas para la versión C++.
+Se ha actualizado el manual de usuario.
+Se ha actualizado el email de contacto del creador de TS2006: daniel@blackdtools.com
+29.03.2011 [versión final 1.0]
+Por coherencia con la versión C++, se ha modificado la función buscar_posicion_entrada de la versión C para que también devuelva 0 en caso de que la entrada no exista (antes devolvía -1)
+Para evitar problemas en caso de largas compilaciones, se ha modificado la constante cte_max_tablas. Ahora es el máximo que permite un int: 2147483647 (antes sólo 32000)
+Se ha actualizado el manual de usuario.
